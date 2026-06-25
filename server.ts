@@ -354,7 +354,8 @@ app.post("/api/services/status/:id", (req, res) => {
   
   const svc = serviceConfigs[id as ServiceId];
   if (!svc) {
-    return res.status(404).json({ error: "Service not found" });
+    res.status(404).json({ error: "Service not found" });
+    return;
   }
   
   if (status !== undefined) svc.status = status;
