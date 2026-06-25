@@ -159,7 +159,7 @@ export default function TopologyGraph({
             if (!fromNode || !toNode) return null;
 
             const isActive = activeLinks.has(`${link.from}->${link.to}`);
-            const isSvcOffline = services[link.from].status === 'offline' || services[link.to].status === 'offline';
+            const isSvcOffline = services[link.from as ServiceId].status === 'offline' || services[link.to as ServiceId].status === 'offline';
 
             return (
               <g key={idx} className="transition-all duration-300">
