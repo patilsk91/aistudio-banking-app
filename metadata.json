@@ -1,0 +1,6 @@
+{
+  "name": "Microservices Banking PoC",
+  "description": "A high-fidelity full-stack proof-of-concept demonstrating microservice-based banking architecture, live service health metrics, distributed tracing, and interactive banking transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
